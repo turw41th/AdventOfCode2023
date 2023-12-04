@@ -22,12 +22,9 @@ public class DigitFinder
         return sum;
     }
 
-    private string[] LoadFileContent()
-    {
-        string[] lines = File.ReadAllLines(@"Resources\resourceFile.txt");
-        
-        return lines;
-    }
+    private string[] LoadFileContent() =>
+        File.ReadAllLines(@"Resources\resourceFile.txt");
+    
 
     private (char?, char?) FindFirstAndLastDigit(string input)
     {
